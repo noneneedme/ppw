@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Copy_of_tugasgraph_2 &#8212; My sample book</title>
+    <title>Copy_of_tugasgraph_2 &#8212; Pengumpulan Tugas</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Copy_of_tugasgraph_2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Topik_Modeling_LDA.html" />
+    <link rel="next" title="Topik_Modeling_LDA" href="Topik_Modeling_LDA.html" />
     <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Pengumpulan Tugas - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Pengumpulan Tugas - Home"/>`);</script>
   
   
 </a></div>
@@ -172,6 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Copy_of_tugasgraph_2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topik_Modeling_LDA.html">Topik_Modeling_LDA</a></li>
 </ul>
 
     </div>
@@ -226,7 +227,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/noneneedme/prosaindata/blob/master/_sources/Copy_of_tugasgraph_2.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/noneneedme/ppw/blob/master/_sources/Copy_of_tugasgraph_2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -257,7 +258,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/noneneedme/prosaindata" target="_blank"
+      <li><a href="https://github.com/noneneedme/ppw" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -274,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/noneneedme/prosaindata/issues/new?title=Issue%20on%20page%20%2FCopy_of_tugasgraph_2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/noneneedme/ppw/issues/new?title=Issue%20on%20page%20%2FCopy_of_tugasgraph_2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -373,7 +374,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -389,6 +392,27 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#library-environment-module">Library/Environment Module</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scraping-crawling-berita">Scraping/Crawling Berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vektorisasi-tf-idf">Vektorisasi TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-dan-tabeling">Pre-processing dan Tabeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-csv">Import CSV</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-kesamaan-antar-kalimat-menggunakan-cosine-similarity">Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-tingkat-similarity-antar-kalimat">Menampilkan Tingkat similarity antar kalimat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigen-vector-dan-melakukan-pengurutan">Menghitung Eigen Vector dan Melakukan Pengurutan</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -400,7 +424,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="copy-of-tugasgraph-2">
 <h1>Copy_of_tugasgraph_2<a class="headerlink" href="#copy-of-tugasgraph-2" title="Permalink to this heading">#</a></h1>
-<p>##Library/Environment Module</p>
+<section id="library-environment-module">
+<h2>Library/Environment Module<a class="headerlink" href="#library-environment-module" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -416,7 +441,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p>##Scraping/Crawling Berita</p>
+</section>
+<section id="scraping-crawling-berita">
+<h2>Scraping/Crawling Berita<a class="headerlink" href="#scraping-crawling-berita" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -446,6 +473,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>				Jakarta (ANTARA) - Tim Nasional (Tim) Nasional Indonesia telah melakukan pemetaan kekuatan tim yang menjadi lawan-lawan mereka di babak penyisihan Grup A Piala Dunia U-17 yang digelar mulai 10 November.
 Pelatih kepala Timnas Indonesia U-17 Bima Sakti di Jakarta, Senin mengatakan jajaran pelatih sudah melihat berbagai referensi seperti potongan video pertandingan untuk menganalisis kekuatan dan kelemahan tim-tim lawan yaitu Ekuador, Panama maupun Maroko yang akan mereka hadapi di Stadion Gelora Bung Tomo, Surabaya pada fase grup.
 “Kita libatkan coach Frank Wormuth serta coach Indra Sjafri untuk membaca data tersebut dan menyusun strategi dalam laga nanti,” kata Bima ketika memimpin latihan di Jakarta, Senin.
@@ -461,13 +492,11 @@ Piala Dunia U-17 digelar di empat arena yakni Jakarta Internasional Stadium (JIS
 Pewarta: Mario Sofia NasutionEditor: Aditya Eko Sigit Wicaksono				COPYRIGHT © ANTARA 2023
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
-</pre></div>
 </div>
 </div>
-</div>
-<p>##Vektorisasi TF-IDF</p>
+</section>
+<section id="vektorisasi-tf-idf">
+<h2>Vektorisasi TF-IDF<a class="headerlink" href="#vektorisasi-tf-idf" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
@@ -771,7 +800,9 @@ wicaksono: 0.3051
 </div>
 </div>
 </div>
-<p>##Pre-processing dan Tabeling</p>
+</section>
+<section id="pre-processing-dan-tabeling">
+<h2>Pre-processing dan Tabeling<a class="headerlink" href="#pre-processing-dan-tabeling" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cleansing step to remove unwanted characters</span>
@@ -802,7 +833,7 @@ wicaksono: 0.3051
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-25f344c5-aec9-467d-9668-956bb4e7a3af" class="colab-df-container">
+  <div id="df-288c62bb-369b-4c33-abe6-d667cb2eebbe" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1164,7 +1195,7 @@ wicaksono: 0.3051
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-25f344c5-aec9-467d-9668-956bb4e7a3af')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-288c62bb-369b-4c33-abe6-d667cb2eebbe')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1216,12 +1247,12 @@ wicaksono: 0.3051
 
     <script>
       const buttonEl =
-        document.querySelector('#df-25f344c5-aec9-467d-9668-956bb4e7a3af button.colab-df-convert');
+        document.querySelector('#df-288c62bb-369b-4c33-abe6-d667cb2eebbe button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-25f344c5-aec9-467d-9668-956bb4e7a3af');
+        const element = document.querySelector('#df-288c62bb-369b-4c33-abe6-d667cb2eebbe');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1244,7 +1275,9 @@ wicaksono: 0.3051
   </div>
   </div></div>
 </div>
-<p>##Import CSV</p>
+</section>
+<section id="import-csv">
+<h2>Import CSV<a class="headerlink" href="#import-csv" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tfidf</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Graoph.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1252,7 +1285,9 @@ wicaksono: 0.3051
 </div>
 </div>
 </div>
-<p>##Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</p>
+</section>
+<section id="perbandingan-kesamaan-antar-kalimat-menggunakan-cosine-similarity">
+<h2>Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity<a class="headerlink" href="#perbandingan-kesamaan-antar-kalimat-menggunakan-cosine-similarity" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_similarity</span>
@@ -1379,7 +1414,9 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
 </div>
 </div>
 </div>
-<p>##Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</p>
+</section>
+<section id="id1">
+<h2>Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1401,7 +1438,7 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-51fce436-aad8-4df7-afa0-2aa9f4d4f5ae" class="colab-df-container">
+  <div id="df-7d3a58e5-1569-46be-86e7-68b1957da9a4" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1650,7 +1687,7 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-51fce436-aad8-4df7-afa0-2aa9f4d4f5ae')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7d3a58e5-1569-46be-86e7-68b1957da9a4')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1702,12 +1739,12 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
 
     <script>
       const buttonEl =
-        document.querySelector('#df-51fce436-aad8-4df7-afa0-2aa9f4d4f5ae button.colab-df-convert');
+        document.querySelector('#df-7d3a58e5-1569-46be-86e7-68b1957da9a4 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-51fce436-aad8-4df7-afa0-2aa9f4d4f5ae');
+        const element = document.querySelector('#df-7d3a58e5-1569-46be-86e7-68b1957da9a4');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1730,7 +1767,8 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
   </div>
   </div></div>
 </div>
-<p>###Menampilkan Tingkat similarity antar kalimat</p>
+<section id="menampilkan-tingkat-similarity-antar-kalimat">
+<h3>Menampilkan Tingkat similarity antar kalimat<a class="headerlink" href="#menampilkan-tingkat-similarity-antar-kalimat" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1771,7 +1809,10 @@ Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
 <img alt="_images/cfb4ef0de469401c67fad951f20e8ddf932db47d4c3bf46f0bc0b4683b5d2a2d.png" src="_images/cfb4ef0de469401c67fad951f20e8ddf932db47d4c3bf46f0bc0b4683b5d2a2d.png" />
 </div>
 </div>
-<p>##Menampilkan Tingkat similarity antar kalimat</p>
+</section>
+</section>
+<section id="id2">
+<h2>Menampilkan Tingkat similarity antar kalimat<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Buat grafik dari matriks similarity</span>
@@ -1817,7 +1858,9 @@ Closeness Centrality of Pewarta: Mario Sofia NasutionEditor: Aditya Eko Sigit Wi
 </div>
 </div>
 </div>
-<p>##Menampilkan Tingkat similarity antar kalimat</p>
+</section>
+<section id="id3">
+<h2>Menampilkan Tingkat similarity antar kalimat<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
@@ -1858,7 +1901,7 @@ Closeness Centrality of Pewarta: Mario Sofia NasutionEditor: Aditya Eko Sigit Wi
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0186a927b7f3554bcf311cb697fdbc10ac04d92183f67b51941f7c47e5c53fd1.png" src="_images/0186a927b7f3554bcf311cb697fdbc10ac04d92183f67b51941f7c47e5c53fd1.png" />
+<img alt="_images/1ed7594df8972f23bf6cf5dd0d8a50677cc32953d1d22c130dff7faaab514371.png" src="_images/1ed7594df8972f23bf6cf5dd0d8a50677cc32953d1d22c130dff7faaab514371.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Closeness Centrality:
 Node 0: 1.0000
 Node 1: 0.9231
@@ -1877,7 +1920,9 @@ Node 12: 0.5217
 </div>
 </div>
 </div>
-<p>##Menampilkan Tingkat similarity antar kalimat</p>
+</section>
+<section id="id4">
+<h2>Menampilkan Tingkat similarity antar kalimat<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hitung PageRank</span>
@@ -1910,7 +1955,9 @@ Node 12: PageRank = 0.0190 Kalimatnya : Pewarta: Mario Sofia NasutionEditor: Adi
 </div>
 </div>
 </div>
-<p>##Menghitung Eigen Vector dan Melakukan Pengurutan</p>
+</section>
+<section id="menghitung-eigen-vector-dan-melakukan-pengurutan">
+<h2>Menghitung Eigen Vector dan Melakukan Pengurutan<a class="headerlink" href="#menghitung-eigen-vector-dan-melakukan-pengurutan" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mencari Eigen Vector Centrality</span>
@@ -1943,6 +1990,7 @@ Node 12: Eigenvector Centrality = 0.0330 Kalimatnya : Pewarta: Mario Sofia Nasut
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1989,7 +2037,7 @@ Node 12: Eigenvector Centrality = 0.0330 Kalimatnya : Pewarta: Mario Sofia Nasut
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Topik_Modeling_LDA</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2000,6 +2048,33 @@ Node 12: Eigenvector Centrality = 0.0330 Kalimatnya : Pewarta: Mario Sofia Nasut
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#library-environment-module">Library/Environment Module</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scraping-crawling-berita">Scraping/Crawling Berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vektorisasi-tf-idf">Vektorisasi TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-dan-tabeling">Pre-processing dan Tabeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-csv">Import CSV</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-kesamaan-antar-kalimat-menggunakan-cosine-similarity">Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Perbandingan kesamaan antar kalimat menggunakan Cosine Similarity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-tingkat-similarity-antar-kalimat">Menampilkan Tingkat similarity antar kalimat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Menampilkan Tingkat similarity antar kalimat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigen-vector-dan-melakukan-pengurutan">Menghitung Eigen Vector dan Melakukan Pengurutan</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -2009,7 +2084,7 @@ Node 12: Eigenvector Centrality = 0.0330 Kalimatnya : Pewarta: Mario Sofia Nasut
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Alif Akbaril Amin
 </p>
 
   </div>

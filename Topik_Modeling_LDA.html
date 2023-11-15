@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Topik_Modeling_LDA &#8212; My sample book</title>
+    <title>Topik_Modeling_LDA &#8212; Pengumpulan Tugas</title>
   
   
   
@@ -151,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Pengumpulan Tugas - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Pengumpulan Tugas - Home"/>`);</script>
   
   
 </a></div>
@@ -226,7 +226,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/noneneedme/prosaindata/blob/master/_sources/Topik_Modeling_LDA.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/noneneedme/ppw/blob/master/_sources/Topik_Modeling_LDA.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -257,7 +257,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/noneneedme/prosaindata" target="_blank"
+      <li><a href="https://github.com/noneneedme/ppw" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -274,7 +274,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/noneneedme/prosaindata/issues/new?title=Issue%20on%20page%20%2FTopik_Modeling_LDA.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/noneneedme/ppw/issues/new?title=Issue%20on%20page%20%2FTopik_Modeling_LDA.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -373,7 +373,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -389,6 +391,39 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-scraping">Crawling Scraping</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-prosesing">Pre Prosesing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-2">Pre-Processing 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#melihat-jumlah-data">Melihat jumlah data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-3">Pre-Processing 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-4">Pre-Processing 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5">Pre-Processing 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-2">Pre-processing 5.2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-3">Pre-Processing 5.3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-4">Pre-Processing 5.4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-vectorisasi">Tahap Vectorisasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis">Principal Component Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lda">LDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembobotan-dokumen-pada-topik">Pembobotan Dokumen pada Topik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pembobotan Dokumen pada Topik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klastering">Klastering</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -412,12 +447,27 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: request2 in /usr/local/lib/python3.10/dist-packages (0.2)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting request2
+  Downloading request2-0.2.tar.gz (3.2 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
 Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from request2) (2.31.0)
 Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.3.2)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.4)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2.0.7)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2023.7.22)
+Building wheels for collected packages: request2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for request2 (setup.py) ... ?25l?25hdone
+  Created wheel for request2: filename=request2-0.2-py3-none-any.whl size=1966 sha256=e5aaca8d7051892b7955566eab9f51adce1f8e099e77f4020e2c5a9c1e9bd16e
+  Stored in directory: /root/.cache/pip/wheels/fe/98/97/4137972b6f31d7285ace92f76c2d546666cc9f51bbdf9b9575
+Successfully built request2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: request2
+Successfully installed request2-0.2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: seaborn in /usr/local/lib/python3.10/dist-packages (0.12.2)
@@ -460,12 +510,85 @@ Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">ERROR: Operation cancelled by user</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3108, in _dep_map
+    return self.__dep_map
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2901, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _DistInfoDistribution__dep_map
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 169, in exc_logging_wrapper
+    status = run_func(*args)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/req_command.py&quot;, line 242, in wrapper
+    return func(self, options, args)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/commands/install.py&quot;, line 441, in run
+    conflicts = self._determine_conflicts(to_install)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/commands/install.py&quot;, line 572, in _determine_conflicts
+    return check_install_conflicts(to_install)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/operations/check.py&quot;, line 101, in check_install_conflicts
+    package_set, _ = create_package_set_from_installed()
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/operations/check.py&quot;, line 42, in create_package_set_from_installed
+    dependencies = list(dist.iter_dependencies())
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/metadata/pkg_resources.py&quot;, line 216, in iter_dependencies
+    return self._dist.requires(extras)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2821, in requires
+    dm = self._dep_map
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3110, in _dep_map
+    self.__dep_map = self._compute_dependencies()
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3132, in _compute_dependencies
+    dm[s_extra] = [r for r in reqs_for_extra(extra) if r not in common]
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3132, in &lt;listcomp&gt;
+    dm[s_extra] = [r for r in reqs_for_extra(extra) if r not in common]
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3124, in reqs_for_extra
+    if not req.marker or req.marker.evaluate({&#39;extra&#39;: extra}):
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/packaging/markers.py&quot;, line 304, in evaluate
+    return _evaluate_markers(self._markers, current_environment)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/packaging/markers.py&quot;, line 233, in _evaluate_markers
+    if isinstance(lhs, Variable):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/usr/local/bin/pip3&quot;, line 8, in &lt;module&gt;
+    sys.exit(main())
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/main.py&quot;, line 79, in main
+    return command.main(cmd_args)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 101, in main
+    return self._main(args)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 223, in _main
+    return run(options, args)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 206, in exc_logging_wrapper
+    logger.critical(&quot;Operation cancelled by user&quot;)
+  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1524, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1624, in _log
+    self.handle(record)
+  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1634, in handle
+    self.callHandlers(record)
+  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1696, in callHandlers
+    hdlr.handle(record)
+  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 968, in handle
+    self.emit(record)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/utils/logging.py&quot;, line 177, in emit
+    self.console.print(renderable, overflow=&quot;ignore&quot;, crop=False, style=style)
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/rich/console.py&quot;, line 1696, in print
+    if style is None:
+KeyboardInterrupt
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: snscrape in /usr/local/lib/python3.10/dist-packages (0.7.0.20230622)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.31.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting snscrape
+  Downloading snscrape-0.7.0.20230622-py3-none-any.whl (74 kB)
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/74.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━ <span class=" -Color -Color-Green">71.7/74.8 kB</span> <span class=" -Color -Color-Red">1.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">74.8/74.8 kB</span> <span class=" -Color -Color-Red">1.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.31.0)
 Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.3)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
 Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from snscrape) (3.13.1)
@@ -479,7 +602,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-<p>##Crawling Scraping</p>
+<section id="crawling-scraping">
+<h2>Crawling Scraping<a class="headerlink" href="#crawling-scraping" title="Permalink to this heading">#</a></h2>
 <p>Kode berikut digunakan untuk melakukan scraping atau crawling pada suatu wesite khusus hal ini dikarenakan penggunaan tag html pada setiap website yang berbeda. Pada kesempatan kali ini website yang digunakan adalah <a href="https://pta.trunojoyo.ac.id/c_search/byprod/7">Website PTA Trunojoyo</a> pada jurusan Manajemen. Pada baris terkahir kode data hasil dari kode scraping/crawling di tempatkan pada file .CSV yang nantinya akan bernama dataptaman.csv</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -593,8 +717,9 @@ Kata kunci : Kepemimpinan, Kompensasi, Kinerja
 </div>
 </div>
 </div>
-<p>##TF-IDF</p>
-<p>##Pre Prosesing</p>
+</section>
+<section id="pre-prosesing">
+<h2>Pre Prosesing<a class="headerlink" href="#pre-prosesing" title="Permalink to this heading">#</a></h2>
 <p>Pre processing pertama pada baris kode berikut adalah memilah teks yang akan diolah.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -942,7 +1067,9 @@ Kata kunci : Kepemimpinan, Kompensasi, Kinerja
   </div>
 </div></div>
 </div>
-<p>##Pre-Processing 2</p>
+</section>
+<section id="pre-processing-2">
+<h2>Pre-Processing 2<a class="headerlink" href="#pre-processing-2" title="Permalink to this heading">#</a></h2>
 <p>data = data.dropna(subset=['abstrak']): Baris ini digunakan untuk menghapus baris-baris dari DataFrame yang memiliki nilai kosong (NaN) pada kolom 'abstrak'. Fungsi dropna digunakan untuk ini, dan argumen subset=['abstrak'] menunjukkan bahwa hanya kolom 'abstrak' yang dijadikan pertimbangan. Setelah operasi ini, DataFrame yang dihasilkan disimpan kembali ke variabel data.</p>
 <p>data = data.reset_index(drop=True): Baris ini bertujuan untuk mengatur ulang indeks DataFrame. Setelah melakukan penghapusan nilai kosong pada langkah sebelumnya, mungkin terjadi pemotongan indeks yang tidak berurutan. Fungsi reset_index digunakan untuk mengatur ulang indeks, dan argumen drop=True berarti indeks yang lama akan dihapus tanpa disertakan dalam DataFrame yang baru. Hasilnya, DataFrame yang telah diatur ulang indeksnya disimpan kembali ke variabel data.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1283,7 +1410,8 @@ Kata kunci : Kepemimpinan, Kompensasi, Kinerja
   </div>
 </div></div>
 </div>
-<p>###Melihat jumlah data</p>
+<section id="melihat-jumlah-data">
+<h3>Melihat jumlah data<a class="headerlink" href="#melihat-jumlah-data" title="Permalink to this heading">#</a></h3>
 <p>Kode ini dimaksudkan untuk melihat jumlah atau banyak data yang dimiliki untuk dilakukan pengecekan karena dikhawatirkan masih terdapat data yang kosong</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#data[&#39;abstrak&#39;].fillna(&#39;&#39;, inplace=True)</span>
@@ -1298,7 +1426,10 @@ Kata kunci : Kepemimpinan, Kompensasi, Kinerja
 </div>
 </div>
 </div>
-<p>##Pre-Processing 3</p>
+</section>
+</section>
+<section id="pre-processing-3">
+<h2>Pre-Processing 3<a class="headerlink" href="#pre-processing-3" title="Permalink to this heading">#</a></h2>
 <p>Tahap ini merupakan Normalisasi Teks: Preprocessing dapat mencakup normalisasi teks, yaitu mengubah teks menjadi bentuk yang konsisten, misalnya mengubah semua huruf menjadi huruf kecil, menghapus spasi ekstra, atau menangani variasi ejaan.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;abstrak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -1325,8 +1456,11 @@ Name: abstrak, Length: 1025, dtype: object
 </div>
 </div>
 </div>
-<p>##Pre-Processing 4</p>
-<p>###Cleansing</p>
+</section>
+<section id="pre-processing-4">
+<h2>Pre-Processing 4<a class="headerlink" href="#pre-processing-4" title="Permalink to this heading">#</a></h2>
+<section id="cleansing">
+<h3>Cleansing<a class="headerlink" href="#cleansing" title="Permalink to this heading">#</a></h3>
 <p>Kode berikut digunakan untuk melakukan Pembersihan Karakter Selain Huruf dan Spasi dengan Menggunakan regular expression (re.sub) untuk mengganti semua karakter selain huruf dan spasi dengan spasi, Membersihan Mention (Username): Menghapus mention yang dimulai dengan karakter '@', Membersihan Hashtag: Menghapus hashtag yang dimulai dengan karakter '#', Membersihan URL Link: Menghapus URL link yang dimulai dengan 'http', dan Mengganti Spasi Berlebih: Mengganti spasi berlebih dengan satu spasi tunggal pada sebuah perulangan yang hasil dari proses ini akan disimpan kedalam sebuah list.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cleaning</span>
@@ -1630,7 +1764,10 @@ Name: abstrak, Length: 1025, dtype: object
   </div>
 </div></div>
 </div>
-<p>##Pre-Processing 5</p>
+</section>
+</section>
+<section id="pre-processing-5">
+<h2>Pre-Processing 5<a class="headerlink" href="#pre-processing-5" title="Permalink to this heading">#</a></h2>
 <p>Tahap ini digunakan untuk Mengatasi Stop Words dan Slank Words: Stop words adalah kata-kata umum yang sering diabaikan karena kurangnya informasi yang dapat mereka berikan. Preprocessing sering kali melibatkan penghapusan stop words agar tidak mempengaruhi analisis secara berlebihan.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Slank Word</span>
@@ -1651,7 +1788,9 @@ Name: abstrak, Length: 1025, dtype: object
 </div>
 </div>
 </div>
-<p>##Pre-processing 5.2</p>
+</section>
+<section id="pre-processing-5-2">
+<h2>Pre-processing 5.2<a class="headerlink" href="#pre-processing-5-2" title="Permalink to this heading">#</a></h2>
 <p>Melanjutkan baris kode sebelumnya. Kode dibawah berfokus pada pembuatan kamus slang words dan penggunaannya untuk mengoreksi kata-kata slang dalam teks. Langkah-langkahnya adalah :</p>
 <p>Membaca Kamus Slang Words: Menggunakan Pandas untuk membaca kamus slang words dari file teks eksternal yang diakses melalui URL.</p>
 <p>Membuat Fungsi replace_slang_words: Fungsi ini menerima teks, tokenisasi teks menjadi kata-kata, menghapus stopwords (kata-kata umum yang tidak memberikan makna), dan mengganti kata-kata slang dengan kata Indonesia yang benar berdasarkan kamus yang telah dibaca.</p>
@@ -1966,7 +2105,9 @@ Name: abstrak, Length: 1025, dtype: object
   </div>
 </div></div>
 </div>
-<p>##Pre-Processing 5.3</p>
+</section>
+<section id="pre-processing-5-3">
+<h2>Pre-Processing 5.3<a class="headerlink" href="#pre-processing-5-3" title="Permalink to this heading">#</a></h2>
 <p>Tahap ini merupakan lanjutan dari kode sebelumnya. Kode berikut digunakan untuk Penghapusan Stopwords, Penyimpanan Kata-Kata yang Telah Dihapus Stopwords, dan Tokenisasi</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3014,7 +3155,9 @@ Name: abstrak, Length: 1025, dtype: object
 </div>
 </div>
 </div>
-<p>##Pre-Processing 5.4</p>
+</section>
+<section id="pre-processing-5-4">
+<h2>Pre-Processing 5.4<a class="headerlink" href="#pre-processing-5-4" title="Permalink to this heading">#</a></h2>
 <p>Kode berikut merupakan tahapan untuk menggabungkan setiap kata (term) dari tahap kode sebelumnya yang memisahkan setiap kata pada kalimat. Hal ini karena tujuan dari pembuatan kode adalah menghitung dan mencari LDA dari setiap abstrak.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gabung</span><span class="o">=</span><span class="p">[]</span>
@@ -3310,8 +3453,11 @@ Name: abstrak, Length: 1025, dtype: object
   </div>
 </div></div>
 </div>
-<p>##TF-IDF</p>
-<p>###Tahap Vectorisasi</p>
+</section>
+<section id="tf-idf">
+<h2>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h2>
+<section id="tahap-vectorisasi">
+<h3>Tahap Vectorisasi<a class="headerlink" href="#tahap-vectorisasi" title="Permalink to this heading">#</a></h3>
 <p>df = df.dropna(subset=['Join_Kata']) dimaksudkan untuk melakukan pengecekan kembali dikhawatirkan masih terdapat data kosong (NaN)</p>
 <p>Kemudian dilanjutkan dengan Vektorisasi TF-IDF penggunaan TF-IDF Vectorizer untuk mengubah teks menjadi vektor fitur TF-IDF. Vektor tersebut menyatakan bobot relatif dari setiap kata dalam setiap dokumen. Hasilnya disimpan dalam DataFrame 'df_tfidfvect'.</p>
 <p>Count Vectorizer ditujukan untuk mengubah teks menjadi vektor fitur berdasarkan frekuensi kemunculan setiap kata. Hasilnya disimpan dalam DataFrame 'df_countvect'.</p><div class="cell docutils container">
@@ -3873,7 +4019,10 @@ Name: abstrak, Length: 1025, dtype: object
   </div>
 </div></div>
 </div>
-<p>##Principal Component Analysis</p>
+</section>
+</section>
+<section id="principal-component-analysis">
+<h2>Principal Component Analysis<a class="headerlink" href="#principal-component-analysis" title="Permalink to this heading">#</a></h2>
 <p>Merupakan suatu metode dalam statistika multivariat yang digunakan untuk mengurangi dimensi data, sementara mempertahankan sebanyak mungkin variasi yang terdapat dalam data tersebut. Tujuan utama dari PCA adalah menyederhanakan data kompleks menjadi bentuk yang lebih mudah diinterpretasikan dan dipahami, tanpa kehilangan informasi yang signifikan. Beberapa tahapannya adalah sebagai berikut.</p>
 <p>Import module. Dalam kode ini menggunakan modul dari Scikit-Learn</p>
 <p>Membuat Objek PCA objek PCA dengan menyertakan parameter n_components=40, yang mengindikasikan bahwa kita ingin menghasilkan 40 komponen utama.</p>
@@ -4411,8 +4560,11 @@ Name: abstrak, Length: 1025, dtype: object
   </div>
 </div></div>
 </div>
-<p>##LDA</p>
-<p>##Pembobotan Dokumen pada Topik</p>
+</section>
+<section id="lda">
+<h2>LDA<a class="headerlink" href="#lda" title="Permalink to this heading">#</a></h2>
+<section id="pembobotan-dokumen-pada-topik">
+<h3>Pembobotan Dokumen pada Topik<a class="headerlink" href="#pembobotan-dokumen-pada-topik" title="Permalink to this heading">#</a></h3>
 <p>Kode pada tahap ini dilakukan untuk melihat bobot setiap dokumen pada setiap topik yang ditentukan sebelumnya. Dokumen disini adalah setiap akbstrak yang telah diolah sebelumnya.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -4450,7 +4602,9 @@ Name: abstrak, Length: 1025, dtype: object
 </div>
 </div>
 </div>
-<p>##Pembobotan Dokumen pada Topik</p>
+</section>
+<section id="id1">
+<h3>Pembobotan Dokumen pada Topik<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Kode pada tahap ini dilakukan untuk melihat bobot setiap dokumen pada setiap topik yang ditentukan sebelumnya. Dokumen disini adalah setiap akbstrak yang telah diolah sebelumnya.</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bobot setiap topik terhadap dokumen</span>
@@ -5512,7 +5666,10 @@ Name: abstrak, Length: 1025, dtype: object
 </div>
 </div>
 </div>
-<p>##Klastering</p>
+</section>
+</section>
+<section id="klastering">
+<h2>Klastering<a class="headerlink" href="#klastering" title="Permalink to this heading">#</a></h2>
 <p>Klastering dilakukan karena dokumen yang dimiliki tidak memiliki label atau kelas yang membedakannya oleh karena itu kode tahap ini digunakan untuk melakukan klastering pada dokumen dengan menggunakan metode K-Means. Pada jurusan manajemen sendiri hanya terdapat 3 topik judul yaitu MSDM, Pemasaran dan Keuangan. Dan beberapa tahap berikutnya hanyalah menampilkan hasil penggabungan dari tahap-tahap sebelumnya</p><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
@@ -6271,6 +6428,7 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
 </div>
 </div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -6318,6 +6476,45 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-scraping">Crawling Scraping</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-prosesing">Pre Prosesing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-2">Pre-Processing 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#melihat-jumlah-data">Melihat jumlah data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-3">Pre-Processing 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-4">Pre-Processing 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5">Pre-Processing 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-2">Pre-processing 5.2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-3">Pre-Processing 5.3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-5-4">Pre-Processing 5.4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-vectorisasi">Tahap Vectorisasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis">Principal Component Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lda">LDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembobotan-dokumen-pada-topik">Pembobotan Dokumen pada Topik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pembobotan Dokumen pada Topik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klastering">Klastering</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -6327,7 +6524,7 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Alif Akbaril Amin
 </p>
 
   </div>
