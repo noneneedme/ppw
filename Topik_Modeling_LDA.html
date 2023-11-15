@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Topik_Modeling_LDA &#8212; Pengumpulan Tugas</title>
+    <title>Topik_Modeling_LDA &#8212; My sample book</title>
   
   
   
@@ -151,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Pengumpulan Tugas - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Pengumpulan Tugas - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -447,27 +447,12 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting request2
-  Downloading request2-0.2.tar.gz (3.2 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: request2 in /usr/local/lib/python3.10/dist-packages (0.2)
 Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from request2) (2.31.0)
 Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.3.2)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.4)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2.0.7)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2023.7.22)
-Building wheels for collected packages: request2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for request2 (setup.py) ... ?25l?25hdone
-  Created wheel for request2: filename=request2-0.2-py3-none-any.whl size=1966 sha256=e5aaca8d7051892b7955566eab9f51adce1f8e099e77f4020e2c5a9c1e9bd16e
-  Stored in directory: /root/.cache/pip/wheels/fe/98/97/4137972b6f31d7285ace92f76c2d546666cc9f51bbdf9b9575
-Successfully built request2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: request2
-Successfully installed request2-0.2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: seaborn in /usr/local/lib/python3.10/dist-packages (0.12.2)
@@ -510,85 +495,12 @@ Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3108, in _dep_map
-    return self.__dep_map
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2901, in __getattr__
-    raise AttributeError(attr)
-AttributeError: _DistInfoDistribution__dep_map
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">ERROR: Operation cancelled by user</span>
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 169, in exc_logging_wrapper
-    status = run_func(*args)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/req_command.py&quot;, line 242, in wrapper
-    return func(self, options, args)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/commands/install.py&quot;, line 441, in run
-    conflicts = self._determine_conflicts(to_install)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/commands/install.py&quot;, line 572, in _determine_conflicts
-    return check_install_conflicts(to_install)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/operations/check.py&quot;, line 101, in check_install_conflicts
-    package_set, _ = create_package_set_from_installed()
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/operations/check.py&quot;, line 42, in create_package_set_from_installed
-    dependencies = list(dist.iter_dependencies())
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/metadata/pkg_resources.py&quot;, line 216, in iter_dependencies
-    return self._dist.requires(extras)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2821, in requires
-    dm = self._dep_map
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3110, in _dep_map
-    self.__dep_map = self._compute_dependencies()
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3132, in _compute_dependencies
-    dm[s_extra] = [r for r in reqs_for_extra(extra) if r not in common]
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3132, in &lt;listcomp&gt;
-    dm[s_extra] = [r for r in reqs_for_extra(extra) if r not in common]
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3124, in reqs_for_extra
-    if not req.marker or req.marker.evaluate({&#39;extra&#39;: extra}):
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/packaging/markers.py&quot;, line 304, in evaluate
-    return _evaluate_markers(self._markers, current_environment)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/packaging/markers.py&quot;, line 233, in _evaluate_markers
-    if isinstance(lhs, Variable):
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/usr/local/bin/pip3&quot;, line 8, in &lt;module&gt;
-    sys.exit(main())
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/main.py&quot;, line 79, in main
-    return command.main(cmd_args)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 101, in main
-    return self._main(args)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 223, in _main
-    return run(options, args)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/base_command.py&quot;, line 206, in exc_logging_wrapper
-    logger.critical(&quot;Operation cancelled by user&quot;)
-  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1524, in critical
-    self._log(CRITICAL, msg, args, **kwargs)
-  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1624, in _log
-    self.handle(record)
-  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1634, in handle
-    self.callHandlers(record)
-  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 1696, in callHandlers
-    hdlr.handle(record)
-  File &quot;/usr/lib/python3.10/logging/__init__.py&quot;, line 968, in handle
-    self.emit(record)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/utils/logging.py&quot;, line 177, in emit
-    self.console.print(renderable, overflow=&quot;ignore&quot;, crop=False, style=style)
-  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/rich/console.py&quot;, line 1696, in print
-    if style is None:
-KeyboardInterrupt
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting snscrape
-  Downloading snscrape-0.7.0.20230622-py3-none-any.whl (74 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/74.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━ <span class=" -Color -Color-Green">71.7/74.8 kB</span> <span class=" -Color -Color-Red">1.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">74.8/74.8 kB</span> <span class=" -Color -Color-Red">1.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.31.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: snscrape in /usr/local/lib/python3.10/dist-packages (0.7.0.20230622)
+Requirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.31.0)
 Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.3)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
 Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from snscrape) (3.13.1)
@@ -6524,7 +6436,7 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
   <div class="footer-item">
     
 <p class="component-author">
-By Alif Akbaril Amin
+By The Jupyter Book Community
 </p>
 
   </div>
