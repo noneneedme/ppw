@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Topik_Modeling_LDA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas 2 Graph" href="tugasgraph3.html" />
     <link rel="prev" title="Copy_of_tugasgraph_2" href="Copy_of_tugasgraph_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -138,6 +139,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
@@ -172,6 +174,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Copy_of_tugasgraph_2.html">Copy_of_tugasgraph_2</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Topik_Modeling_LDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugasgraph3.html">Tugas 2 Graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas_4.html">Tugas Data</a></li>
 </ul>
 
     </div>
@@ -356,6 +360,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -365,6 +370,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -447,12 +453,27 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: request2 in /usr/local/lib/python3.10/dist-packages (0.2)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting request2
+  Downloading request2-0.2.tar.gz (3.2 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
 Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from request2) (2.31.0)
 Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.3.2)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.4)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (3.6)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2.0.7)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2023.7.22)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;request2) (2023.11.17)
+Building wheels for collected packages: request2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for request2 (setup.py) ... ?25l?25hdone
+  Created wheel for request2: filename=request2-0.2-py3-none-any.whl size=1966 sha256=c97d4c39d2b46580efa483ea27f5045b0b2de46adea105ef91a9bff532eb0a21
+  Stored in directory: /root/.cache/pip/wheels/fe/98/97/4137972b6f31d7285ace92f76c2d546666cc9f51bbdf9b9575
+Successfully built request2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: request2
+Successfully installed request2-0.2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: seaborn in /usr/local/lib/python3.10/dist-packages (0.12.2)
@@ -461,7 +482,7 @@ Requirement already satisfied: pandas&gt;=0.25 in /usr/local/lib/python3.10/dist
 Requirement already satisfied: matplotlib!=3.6.1,&gt;=3.1 in /usr/local/lib/python3.10/dist-packages (from seaborn) (3.7.1)
 Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (1.2.0)
 Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (0.12.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (4.44.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (4.45.1)
 Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (1.4.5)
 Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (23.2)
 Requirement already satisfied: pillow&gt;=6.2.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib!=3.6.1,&gt;=3.1-&gt;seaborn) (9.4.0)
@@ -485,7 +506,7 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-pac
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: matplotlib in /usr/local/lib/python3.10/dist-packages (3.7.1)
 Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (1.2.0)
 Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (0.12.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (4.44.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (4.45.1)
 Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (1.4.5)
 Requirement already satisfied: numpy&gt;=1.20 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (1.23.5)
 Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (23.2)
@@ -495,21 +516,44 @@ Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">ERROR: Operation cancelled by user</span>
-
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/usr/local/bin/pip3&quot;, line 5, in &lt;module&gt;
+    from pip._internal.cli.main import main
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/main.py&quot;, line 10, in &lt;module&gt;
+    from pip._internal.cli.autocompletion import autocomplete
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/autocompletion.py&quot;, line 10, in &lt;module&gt;
+    from pip._internal.cli.main_parser import create_main_parser
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/main_parser.py&quot;, line 9, in &lt;module&gt;
+    from pip._internal.build_env import get_runnable_pip
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/build_env.py&quot;, line 19, in &lt;module&gt;
+    from pip._internal.cli.spinners import open_spinner
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/cli/spinners.py&quot;, line 9, in &lt;module&gt;
+    from pip._internal.utils.logging import get_indentation
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/utils/logging.py&quot;, line 29, in &lt;module&gt;
+    from pip._internal.utils.misc import ensure_dir
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/utils/misc.py&quot;, line 43, in &lt;module&gt;
+    from pip._internal.exceptions import CommandError, ExternallyManagedEnvironment
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_internal/exceptions.py&quot;, line 18, in &lt;module&gt;
+    from pip._vendor.requests.models import Request, Response
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/requests/__init__.py&quot;, line 45, in &lt;module&gt;
+    from .exceptions import RequestsDependencyWarning
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/requests/exceptions.py&quot;, line 9, in &lt;module&gt;
+    from .compat import JSONDecodeError as CompatJSONDecodeError
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/requests/compat.py&quot;, line 10, in &lt;module&gt;
+    from pip._vendor import chardet
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/chardet/__init__.py&quot;, line 24, in &lt;module&gt;
+    from .universaldetector import UniversalDetector
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/chardet/universaldetector.py&quot;, line 52, in &lt;module&gt;
+    from .sbcsgroupprober import SBCSGroupProber
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/chardet/sbcsgroupprober.py&quot;, line 45, in &lt;module&gt;
+    from .langthaimodel import TIS_620_THAI_MODEL
+  File &quot;/usr/local/lib/python3.10/dist-packages/pip/_vendor/chardet/langthaimodel.py&quot;, line 4372, in &lt;module&gt;
+    TIS_620_THAI_MODEL = SingleByteCharSetModel(
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;lambda&gt;
+KeyboardInterrupt
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: snscrape in /usr/local/lib/python3.10/dist-packages (0.7.0.20230622)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.31.0)
-Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.3)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
-Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from snscrape) (3.13.1)
-Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dist-packages (from beautifulsoup4-&gt;snscrape) (2.5)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (3.3.2)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (3.4)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (2.0.7)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (2023.7.22)
-Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
 </pre></div>
 </div>
 </div>
@@ -6370,7 +6414,7 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="Copy_of_tugasgraph_2.html"
@@ -6380,6 +6424,15 @@ fatal: Authentication failed for &#39;https://github.com/noneneedme/ppw.git/&#39
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Copy_of_tugasgraph_2</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="tugasgraph3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas 2 Graph</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -6443,6 +6496,7 @@ By The Jupyter Book Community
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -6469,8 +6523,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
